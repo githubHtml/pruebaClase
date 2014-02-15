@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Intro a JavaScript</title>
+		<script>
+		
+		/*
+			//concatenacion de cadenas
+			document.write('<h1>hola mundo</h1>' + "texto2");
+			document.write('<h1>hola mundo</h1>' + 55);
+			document.write((5 + 4) + "otro texto");
+			document.write("otro texto");
+			
+			var $ = "robles";
+			var nombre = "ismael";
+			var suma = 0.1 + 0.2;
+						
+			document.write(nombre);
+			document.write(suma);
+			
+		
+		*/	
+			
+			/* esto es un comentario */
+			//var usuario = prompt("escribe tu nombre");
+			//document.write(usuario);
+		
+		
+			var suma = function(a,b){
+				
+				var resultado = a + b;				
+				return resultado;								
+			};
+			
+			function operacion(miFuncion,a,b){
+				return miFuncion(a,b);
+			}
+			
+			//var resultado = operacion(suma,5,7);
+			var resultado = operacion(function(a,b){
+				var resultado = a*b;
+				
+				return resultado;
+			},5,7);
+			
+			document.write(resultado);
+			
+			//objeto de javascript			
+			var persona = {
+				nombre:"ismael",
+				edad:27,
+				hablar:function(){
+					
+					document.write("hola");
+				}
+			};
+			
+			document.write(persona.nombre);
+			persona.hablar();			
+
+		</script>
+		
+		
+		
+		
+		
+		
+		
+	</head>
+	<body>
+		<!-- nada por ahora en el body -->
+	</body>
+</html>

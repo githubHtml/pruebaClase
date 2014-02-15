@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<!-- esto es para utf-8 -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<title>Mi pagina</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+		<link href="imagenes/chela.png" rel="shortcut icon"/>
+		<link href="css/normalize.css" rel="stylesheet"/>
+		<link href="css/estilos.css" rel="stylesheet"/>
+
+		<style>
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul id="menu">
+					<li>
+						Inicio
+					</li>
+					<li>
+						Productos
+					</li>
+					<li>
+						Blog
+					</li>
+					<li>
+						Acerca
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section id="bienvenida">
+			{frase} {datos.nombre}
+		</section>
+		<section id="frases">
+			<div class="frase">
+				<img src="imagenes/chela.png"/>
+				<p>
+					Imaginar
+				</p>
+			</div>
+			<div class="frase">
+				<img src="imagenes/lambda.png"/>
+				<p>
+					Pensar
+				</p>
+			</div>
+			<div class="frase">
+				<img src="imagenes/python.png"/>
+				<p>
+					Crear
+				</p>
+			</div>
+		</section>
+		<section>
+			<video controls poster="imagenes/logo-chrome.jpg" class="flexible">
+				<source src="videos/chrome_japan.mp4" type="video/mp4"/>
+				<source src="videos/chrome_japan.ogv" type="video/ogg"/>
+				<source src="videos/chrome_japan.webm" type="video/webm"/>
+				Tu navegador no soporta video html5 :(
+			</video>
+		</section>
+		<footer>
+			<div id="derechos">
+				<span>MiPagina</span> derechos reservados
+				<div id="imagenes">
+					<img src="imagenes/googleplus.png" />
+					<img src="imagenes/facebook.png" />
+					<img src="imagenes/twitter.png" />
+					<img src="imagenes/youtube.png" />
+				</div>
+			</div>
+			<div id="suscripcion">
+				
+				<form action="/suscribir" method="post">
+					<label for="email">Suscribete:</label>
+					<input id="email" type="text" name="email"/>
+					<input type="submit" value="enviar"/>
+				</form>
+
+			</div>
+		</footer>
+	</body>
+</html>
+

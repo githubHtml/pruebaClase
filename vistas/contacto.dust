@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<!-- esto es para utf-8 -->
+		<meta charset="utf-8"/>
+		<title>Mi pagina</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+		<link href="imagenes/chela.png" rel="shortcut icon"/>
+		<link href="css/normalize.css" rel="stylesheet"/>
+		<link href="css/estilos.css" rel="stylesheet"/>
+
+		<style>
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul id="menu">
+					<li>
+						Inicio
+					</li>
+					<li>
+						Productos
+					</li>
+					<li>
+						Blog
+					</li>
+					<li>
+						Acerca
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<form id="forma-contactar" action="/contactar" method="post">
+
+			<div class="forma-coli">
+				<label for="nombre" >Nombre:</label>
+			</div>
+			<div class="forma-cold">
+				<input id="nombre" name="nombre" type="text" />
+			</div>
+
+			<div class="forma-coli">
+				<label for="emailContacto" >Email:</label>
+			</div>
+			<div class="forma-cold">
+				<input id="emailContacto" name="email" type="email" required/>
+			</div>
+			<div class="forma-coli">
+				<label for="url" >URL:</label>
+			</div>
+			<div class="forma-cold">
+				<input id="url" name="url" type="url" pattern="http(s)?://[a-zA-Z]+.[a-zA-Z]+"/>
+			</div>
+
+			<div class="forma-coli">
+				<label for="edad" >Edad:</label>
+			</div>
+			<div class="forma-cold">
+				<input id="edad"name="edad" type="range" min="18" max="90" step="5" />
+			</div>
+
+			<div class="forma-coli">
+				<label>Dudas:</label>
+			</div>
+			<div class="forma-renglon">
+				<textarea id="dudas" name="dudas"></textarea>
+			</div>
+			<div class="forma-renglon">
+				<input type="submit" value="enviar"/>
+			</div>
+		</form>
+
+		<footer>
+			<div id="derechos">
+				<span>MiPagina</span> derechos reservados
+				<div id="imagenes">
+					<img src="imagenes/googleplus.png" />
+					<img src="imagenes/facebook.png" />
+					<img src="imagenes/twitter.png" />
+					<img src="imagenes/youtube.png" />
+				</div>
+			</div>
+			<div id="suscripcion">
+
+				<form action="/suscribir" method="post">
+					<label for="email">Suscribete:</label>
+					<input id="email" type="text" name="email"/>
+					<input type="submit" value="enviar"/>
+				</form>
+
+			</div>
+		</footer>
+	</body>
+</html>
+
